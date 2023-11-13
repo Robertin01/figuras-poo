@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Actividades_unidad_2
+{
+    class Figuras
+    {
+      private int filas = 0;
+        public void DibujarCuadrado(int filas) 
+        {
+            for (int i = 0; i < filas; i++)
+            {
+                Console.WriteLine();
+
+                for (int j = 0; j < filas; j++)
+                {
+                    Console.Write("* ");
+                }      
+            }
+            Console.WriteLine();
+
+        }
+        public void DibujarTrianguloNornal(int filas)
+        {
+
+            for (int i = 0; i < filas; i++)
+            {
+                Console.WriteLine();
+
+                for (int j = 0; j <= i; j++)
+                {
+
+                    Console.Write("* ");
+                    
+                }
+               
+            }
+            Console.WriteLine();
+        }
+        
+        public void DibujarTrianguloRevertido (int filas)
+        {
+            for (int i = filas; i > 0 ; i--)
+            {
+                Console.WriteLine();
+
+                for (int j = 0; j < i ; j++)
+                {
+                    Console.Write("* ");
+                }
+            }
+            Console.WriteLine();
+        }
+        public void DibujarTrianguloDelReves (int filas)
+        {
+            for (int i = 0; i < filas; i++)
+            {
+                Console.WriteLine();
+
+                for (int p = 0; p<filas-i-1; p++)
+                {
+                    Console.Write("  ");
+                }
+
+                for (int j = 0; j <= i; j++)
+                {
+
+                    Console.Write("* ");
+
+                }
+
+            }
+            Console.WriteLine();
+
+
+        }
+    }
+}
